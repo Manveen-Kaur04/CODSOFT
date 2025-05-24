@@ -1,41 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beautiful Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaEdge - Creative Digital Agency</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  <div class="calculator">
-    <div class="display" id="display">0</div>
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="deleteChar()">DEL</button>
-      <button onclick="appendValue('%')">%</button>
-      <button onclick="appendValue('/')">/</button>
+   
 
-      <button onclick="appendValue('7')">7</button>
-      <button onclick="appendValue('8')">8</button>
-      <button onclick="appendValue('9')">9</button>
-      <button onclick="appendValue('*')">*</button>
-
-      <button onclick="appendValue('4')">4</button>
-      <button onclick="appendValue('5')">5</button>
-      <button onclick="appendValue('6')">6</button>
-      <button onclick="appendValue('-')">-</button>
-
-      <button onclick="appendValue('1')">1</button>
-      <button onclick="appendValue('2')">2</button>
-      <button onclick="appendValue('3')">3</button>
-      <button onclick="appendValue('+')">+</button>
-
-      <button onclick="appendValue('0')">0</button>
-      <button onclick="appendValue('.')">.</button>
-      <button onclick="calculate()" class="equal">=</button>
-    </div>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <p>Email: contact@novaedge.com | Call: +123 456 7890</p>
+   
   </div>
 
-  <script src="script.js"></script>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">NovaEdge</div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+ 
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Crafting Digital Brilliance</h1>
+      <p>Innovative solutions for your modern business needs</p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn primary">Explore Services</a>
+        <a href="#contact" class="btn secondary">Get in Touch</a>
+
+      </div>
+    </div>
+  </section>
+  <!-- Clients -->
+<section id="clients">
+    <h2>Trusted By</h2>
+    <div class="client-logos">
+      <img src="google.jpg" alt="Client 1" />
+      <img src="amazon.jpg" alt="Client 2" />
+      <img src="spotify.jpg" alt="Client 3" />
+      <img src="slack.jpeg" alt="Client 4" />
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features">
+    <h2>Why Choose Us</h2>
+    <div class="feature-grid">
+      <div class="feature-card">Reliable Team</div>
+      <div class="feature-card">Cutting-Edge Tools</div>
+      <div class="feature-card">Timely Delivery</div>
+    </div>
+  </section>
+
+   <!-- Newsletter -->
+<section id="newsletter">
+    <h2>Stay Updated</h2>
+    <p class="newsletter-text">Subscribe to our newsletter to receive the latest updates and insights.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About NovaEdge</h2>
+        <p>We are a passionate team of creators, developers, and dreamers building futuristic digital solutions for brands that matter.</p>
+        <a href="#" class="btn secondary">Learn More</a>
+      </div>
+      <div class="about-image">
+        <img src="imagesabout.jpg" alt="Team"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>UX/UI Design</h3>
+        <p>Designs that delight and engage users seamlessly.</p>
+      </div>
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>Responsive, high-performing websites built for scale.</p>
+      </div>
+      <div class="service-card">
+        <h3>SEO Strategy</h3>
+        <p>Maximize visibility and grow your digital presence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p>"NovaEdge transformed our digital presence entirely!"</p>
+        <strong>- Emma S.</strong>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional, responsive, and full of fresh ideas."</p>
+        <strong>- Jack R.</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Flexible Pricing</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Starter</h3>
+        <p>$19/month</p>
+        <ul>
+          <li>Basic Features</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="#" class="btn primary">Choose Plan</a>
+      </div>
+      <div class="price-card highlight">
+        <h3>Professional</h3>
+        <p>$49/month</p>
+        <ul>
+          <li>All Features</li>
+          <li>Priority Support</li>
+          <li>Analytics</li>
+        </ul>
+        <a href="#" class="btn primary">Choose Plan</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 NovaEdge. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
