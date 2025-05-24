@@ -3,168 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NovaEdge - Creative Digital Agency</title>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-   
 
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <p>Email: contact@novaedge.com | Call: +123 456 7890</p>
-   
-  </div>
+  <!-- Dark mode toggle -->
+  <input type="checkbox" id="toggle" hidden>
+  <label for="toggle" class="toggle-label">Toggle Mode</label>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Manveen Kaur</div>
+    <div class="tagline">Aspiring Full Stack Developer</div>
+  </header>
 
   <!-- Navigation -->
-  <header>
-    <div class="logo">NovaEdge</div>
-    <nav>
-      <a href="#hero">Home</a>
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
- 
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Crafting Digital Brilliance</h1>
-      <p>Innovative solutions for your modern business needs</p>
-      <div class="hero-buttons">
-        <a href="#services" class="btn primary">Explore Services</a>
-        <a href="#contact" class="btn secondary">Get in Touch</a>
+  <!-- About Section -->
+  <section id="about" class="card">
+    <img src="your-image.jpg" alt="Profile Picture" class="profile-img">
+    <h2>About Me</h2>
+    <p>Hello! I'm Manveen Kaur, a passionate web developer learning full-stack development. I enjoy designing creative websites and building real-world projects using HTML, CSS and basic JavaScript.</p>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills" class="card">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+      <div class="skill-title">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 95%;"></div>
       </div>
     </div>
-  </section>
-  <!-- Clients -->
-<section id="clients">
-    <h2>Trusted By</h2>
-    <div class="client-logos">
-      <img src="google.jpg" alt="Client 1" />
-      <img src="amazon.jpg" alt="Client 2" />
-      <img src="spotify.jpg" alt="Client 3" />
-      <img src="slack.jpeg" alt="Client 4" />
-    </div>
-  </section>
 
-  <!-- Features -->
-  <section id="features">
-    <h2>Why Choose Us</h2>
-    <div class="feature-grid">
-      <div class="feature-card">Reliable Team</div>
-      <div class="feature-card">Cutting-Edge Tools</div>
-      <div class="feature-card">Timely Delivery</div>
-    </div>
-  </section>
-
-   <!-- Newsletter -->
-<section id="newsletter">
-    <h2>Stay Updated</h2>
-    <p class="newsletter-text">Subscribe to our newsletter to receive the latest updates and insights.</p>
-    <form class="newsletter-form">
-      <input type="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-
-  <!-- About -->
-  <section id="about">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>About NovaEdge</h2>
-        <p>We are a passionate team of creators, developers, and dreamers building futuristic digital solutions for brands that matter.</p>
-        <a href="#" class="btn secondary">Learn More</a>
+    <div class="skill">
+      <div class="skill-title">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 90%;"></div>
       </div>
-      <div class="about-image">
-        <img src="imagesabout.jpg" alt="Team"/>
+    </div>
+
+    <div class="skill">
+      <div class="skill-title">JavaScript</div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: 70%;"></div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="card">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="desc">
+          <h3>Expense Tracker</h3>
+          <p>A web app to track daily expenses and budget plans.</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="desc">
+          <h3>AI Career Counselor</h3>
+          <p>Helps users find suitable careers based on interests.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>UX/UI Design</h3>
-        <p>Designs that delight and engage users seamlessly.</p>
-      </div>
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>Responsive, high-performing websites built for scale.</p>
-      </div>
-      <div class="service-card">
-        <h3>SEO Strategy</h3>
-        <p>Maximize visibility and grow your digital presence.</p>
-      </div>
-    </div>
+  <!-- Resume Section -->
+  <section id="resume" class="card">
+    <h2>Resume</h2>
+    <p>You can download my resume below:</p>
+    <a href="your-resume.pdf" download style="color:#00c3ff; font-weight:bold;">Download Resume (PDF)</a>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials">
-    <h2>What Our Clients Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial-card">
-        <p>"NovaEdge transformed our digital presence entirely!"</p>
-        <strong>- Emma S.</strong>
-      </div>
-      <div class="testimonial-card">
-        <p>"Professional, responsive, and full of fresh ideas."</p>
-        <strong>- Jack R.</strong>
-      </div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: manveen@example.com</p>
+    <p>Phone: +91-9876543210</p>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing">
-    <h2>Flexible Pricing</h2>
-    <div class="price-grid">
-      <div class="price-card">
-        <h3>Starter</h3>
-        <p>$19/month</p>
-        <ul>
-          <li>Basic Features</li>
-          <li>Email Support</li>
-        </ul>
-        <a href="#" class="btn primary">Choose Plan</a>
-      </div>
-      <div class="price-card highlight">
-        <h3>Professional</h3>
-        <p>$49/month</p>
-        <ul>
-          <li>All Features</li>
-          <li>Priority Support</li>
-          <li>Analytics</li>
-        </ul>
-        <a href="#" class="btn primary">Choose Plan</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name" required />
-      <input type="email" placeholder="Email" required />
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2025 NovaEdge. All rights reserved.</p>
-    </div>
-  </footer>
+  <!-- Section Divider -->
+  <div class="section-divider"></div>
 
 </body>
 </html>
